@@ -66,5 +66,14 @@ export default {
 }
 #bodycontent {
   flex: 1;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25%),
+      rgba(0, 0, 0, 0.95%)
+    ),
+    url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 </style>

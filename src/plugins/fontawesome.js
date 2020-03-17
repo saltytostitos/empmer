@@ -6,7 +6,9 @@ import {
   faMobileAlt,
   faCommentDots,
   faUser,
-  faEnvelope
+  faEnvelope,
+  faChevronLeft,
+  faChevronRight
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -16,5 +18,7 @@ library.add(
   faMobileAlt,
   faCommentDots,
   faUser,
-  faEnvelope
+  faEnvelope,
+  faChevronLeft,
+  faChevronRight
 );

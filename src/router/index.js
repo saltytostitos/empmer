@@ -10,7 +10,6 @@ const routes = [
     name: "home",
     component: Home
   },
-  { path: "/home", redirect: { name: "home" } },
   {
     path: "/about",
     name: "about",
@@ -21,6 +20,12 @@ const routes = [
     path: "/work",
     name: "work",
     component: () => import(/* webpackChunkName: "work" */ "../views/Work.vue")
+  },
+  {
+    path: "*",
+    redirect: {
+      name: "home"
+    }
   }
 ];
 
@@ -28,12 +33,6 @@ const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes
-});
-
-router.beforeEach((to, from, next) => {
-  // prevent duplicates
-  if (to.path != from.path) next();
-  else next(false);
 });
 
 export default router;

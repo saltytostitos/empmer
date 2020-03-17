@@ -46,13 +46,20 @@
             ></textarea>
           </div>
         </div>
+        <!-- Text -->
+        <section class="is-italic">
+          Please send us a message and we will return it as soon as possible.
+        </section>
       </section>
       <footer class="modal-card-foot">
-        <div class="level">
-          <button class="button is-success level-item" @click="submitContact">
+        <div class="container">
+          <button
+            class="button is-success is-full-width"
+            @click="submitContact"
+          >
             Submit
           </button>
-          <button class="button is-danger level-item" @click="toggleContact">
+          <button class="button is-danger " @click="toggleContact">
             Cancel
           </button>
         </div>

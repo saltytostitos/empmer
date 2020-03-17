@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="has-text-success">
     THIS IS HOME
   </div>
 </template>

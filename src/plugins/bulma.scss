@@ -23,7 +23,7 @@ $text-light: $white-bis;
 $body-family: "Montserrat", "sans-serif";
 
 //MODALS
-$modal-background-background-color: rgba($scheme-main, 0.86);
+$modal-background-background-color: rgba($scheme-main, 0.56);
 $modal-card-title-color: $white-ter;
 $modal-card-head-background-color: $scheme-main-ter;
 $modal-card-body-background-color: $scheme-main-bis;
@@ -57,7 +57,7 @@ $input-hover-border-color: $grey;
 //ELEMENTS
 //@import "bulma/sass/elements/box.sass";
 @import "bulma/sass/elements/button.sass";
-//@import "bulma/sass/elements/container.sass";
+@import "bulma/sass/elements/container.sass";
 //@import "bulma/sass/elements/content.sass";
 @import "bulma/sass/elements/form.sass";
 @import "bulma/sass/elements/icon.sass";
@@ -80,7 +80,7 @@ $input-hover-border-color: $grey;
 //LAYOUTS
 //@import "bulma/sass/layout/footer.sass";
 //@import "bulma/sass/layout/hero.sass";
-//@import "bulma/sass/layout/section.sass";
+@import "bulma/sass/layout/section.sass";
 
 //GRIDS
 //@import "bulma/sass/grid/columns.sass";

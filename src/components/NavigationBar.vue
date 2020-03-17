@@ -60,7 +60,7 @@ export default {
   methods: {
     navLink(link, type) {
       if (type == "router") {
-        if (this.$route.name != link) this.$router.push(link);
+        if (this.$route.name != link) this.$router.push({ name: link });
       }
       if (type == "modal") this.$emit(link);
     }

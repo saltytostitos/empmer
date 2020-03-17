@@ -1,0 +1,87 @@
+//VARIABLES
+@import "bulma/sass/utilities/initial-variables.sass";
+@import "bulma/sass/utilities/functions.sass";
+@import "bulma/sass/utilities/derived-variables.sass";
+//@import "bulma/sass/utilities/animations.sass";
+@import "bulma/sass/utilities/mixins.sass";
+@import "bulma/sass/utilities/controls.sass";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+//CUSTOMIZE BULMA VARIABLES
+
+$scheme-main: $black;
+$scheme-main-bis: $black-bis;
+$scheme-main-ter: $black-ter;
+$scheme-invert: $white;
+$scheme-invert-bis: $black-bis;
+$scheme-invert-ter: $black-ter;
+$background: $black-bis;
+$text: $grey-lightest;
+$text-strong: $white-ter;
+$text-light: $white-bis;
+
+$body-family: "Montserrat", "sans-serif";
+
+//MODALS
+$modal-background-background-color: rgba($scheme-main, 0.86);
+$modal-card-title-color: $white-ter;
+$modal-card-head-background-color: $scheme-main-ter;
+$modal-card-body-background-color: $scheme-main-bis;
+$modal-card-foot-border-top: 1px solid $black;
+$modal-card-head-border-bottom: 1px solid $black;
+
+//INPUTS
+$input-border-color: $grey-darker;
+$input-hover-border-color: $grey;
+
+//IMPORT BULMA MODULARITY BELOW
+
+//BASE
+@import "bulma/sass/base/_all.sass";
+
+//COMPONENTS
+//@import "bulma/sass/components/breadcrumb.sass";
+//@import "bulma/sass/components/card.sass";
+//@import "bulma/sass/components/dropdown.sass";
+@import "bulma/sass/components/level.sass";
+//@import "bulma/sass/components/list.sass";
+//@import "bulma/sass/components/media.sass";
+//@import "bulma/sass/components/menu.sass";
+//@import "bulma/sass/components/message.sass";
+@import "bulma/sass/components/modal.sass";
+//@import "bulma/sass/components/navbar.sass";
+//@import "bulma/sass/components/pagination.sass";
+//@import "bulma/sass/components/panel.sass";
+@import "bulma/sass/components/tabs.sass";
+
+//ELEMENTS
+//@import "bulma/sass/elements/box.sass";
+@import "bulma/sass/elements/button.sass";
+//@import "bulma/sass/elements/container.sass";
+//@import "bulma/sass/elements/content.sass";
+@import "bulma/sass/elements/form.sass";
+@import "bulma/sass/elements/icon.sass";
+//@import "bulma/sass/elements/image.sass";
+@import "bulma/sass/elements/notification.sass";
+@import "bulma/sass/elements/other.sass";
+//@import "bulma/sass/elements/progress.sass";
+//@import "bulma/sass/elements/table.sass";
+//@import "bulma/sass/elements/tag.sass";
+//@import "bulma/sass/elements/title.sass";
+
+//FORMS
+@import "bulma/sass/form/shared.sass";
+//@import "bulma/sass/form/checkbox-radio.sass";
+//@import "bulma/sass/form/file.sass";
+@import "bulma/sass/form/input-textarea.sass";
+//@import "bulma/sass/form/select.sass";
+@import "bulma/sass/form/tools.sass";
+
+//LAYOUTS
+//@import "bulma/sass/layout/footer.sass";
+//@import "bulma/sass/layout/hero.sass";
+//@import "bulma/sass/layout/section.sass";
+
+//GRIDS
+//@import "bulma/sass/grid/columns.sass";
+//@import "bluma/sass/grid/tiles.sass";

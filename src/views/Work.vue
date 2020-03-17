@@ -1,8 +1,8 @@
 <template>
   <div>
-    THIS IS ABOUT
-  </div></template
->
+    THIS IS WORK
+  </div>
+</template>
 
 <script>
 export default {};

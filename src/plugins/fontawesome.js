@@ -9,9 +9,11 @@ import {
   faEnvelope,
   faChevronLeft,
   faChevronRight,
-  faCopyright
+  faCopyright,
+  faUserLock,
+  faTimes,
+  faCheck
 } from "@fortawesome/free-solid-svg-icons";
-import { faFacebookF, faInstagram } from "@fortawesome/fontawesome-free-brands";
 
 library.add(
   faHome,
@@ -23,7 +25,8 @@ library.add(
   faEnvelope,
   faChevronLeft,
   faChevronRight,
-  faFacebookF,
-  faInstagram,
-  faCopyright
+  faUserLock,
+  faCopyright,
+  faCheck,
+  faTimes
 );

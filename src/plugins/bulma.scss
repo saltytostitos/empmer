@@ -20,8 +20,6 @@ $text: $grey-lightest;
 $text-strong: $white-ter;
 $text-light: $white-bis;
 
-$facebook: #4267b2;
-$instagram: #d43088;
 $primary: #00adff;
 
 $colors: mergeColorMaps(
@@ -77,14 +75,6 @@ $colors: mergeColorMaps(
       $danger-invert,
       $danger-light,
       $danger-dark
-    ),
-    "facebook": (
-      $facebook,
-      $white
-    ),
-    "instagram": (
-      $instagram,
-      $white
     )
   ),
   $custom-colors
@@ -154,4 +144,4 @@ $input-hover-border-color: $grey;
 
 //GRIDS
 //@import "bulma/sass/grid/columns.sass";
-//@import "bluma/sass/grid/tiles.sass";
+@import "bulma/sass/grid/tiles.sass";

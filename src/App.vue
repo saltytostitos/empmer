@@ -2,14 +2,24 @@
   <div id="app">
     <NavigationBar id="nav" @toggle-contact="toggleContact" />
     <NotificationBar v-if="alert.active" :alert="alert" @alert="toggleAlert" />
-    <router-view id="bodycontent" />
+    <content id="bodycontent">
+      <router-view @toggle-contact="toggleContact" />
+    </content>
+
+    <LoginModal
+      v-if="login"
+      @toggle-login="toggleLogin"
+      :class="{ 'is-active': login }"
+      @alert="toggleAlert($event)"
+    />
+
     <ContactModal
       v-if="contact"
       :class="{ 'is-active': contact }"
       @toggle-contact="toggleContact"
       @alert="toggleAlert($event)"
     />
-    <FooterBar id="footercontent" />
+    <FooterBar id="footercontent" @toggle-login="toggleLogin" />
   </div>
 </template>
 
@@ -18,16 +28,19 @@ import NavigationBar from "./components/NavigationBar";
 import ContactModal from "./components/ContactModal";
 import NotificationBar from "./components/NotificationBar";
 import FooterBar from "./components/FooterBar";
+import LoginModal from "./components/LoginModal";
 export default {
   components: {
     NavigationBar,
     ContactModal,
     NotificationBar,
-    FooterBar
+    FooterBar,
+    LoginModal
   },
   data() {
     return {
       contact: false,
+      login: false,
       alert: {
         active: false,
         type: "",
@@ -36,6 +49,9 @@ export default {
     };
   },
   methods: {
+    toggleLogin() {
+      this.login = !this.login;
+    },
     toggleContact() {
       this.contact = !this.contact;
     },

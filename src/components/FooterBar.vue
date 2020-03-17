@@ -6,12 +6,15 @@
           <fas icon="copyright"></fas>Empirical Merchandising 2020
         </p>
       </div>
+      <div class="icon level-item has-text-grey-dark is-size-7 is-italic ">
+        <span @click="$emit('toggle-login')" class="pointer">admin</span>
+      </div>
       <div class="level-right">
-        <div class="icon is-med level-item has-text-facebook">
-          <fas :icon="['fab', 'facebook-f']"></fas>
+        <div class="icon level-item has-text-facebook">
+          <img src="../assets/fb.png" />
         </div>
         <div class="icon level-item has-text-instagram">
-          <fas :icon="['fab', 'instagram']"></fas>
+          <img src="../assets/ig.png" />
         </div>
       </div>
     </div>

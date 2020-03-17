@@ -20,6 +20,76 @@ $text: $grey-lightest;
 $text-strong: $white-ter;
 $text-light: $white-bis;
 
+$facebook: #4267b2;
+$instagram: #d43088;
+$primary: #00adff;
+
+$colors: mergeColorMaps(
+  (
+    "white": (
+      $white,
+      $black
+    ),
+    "black": (
+      $black,
+      $white
+    ),
+    "light": (
+      $light,
+      $light-invert
+    ),
+    "dark": (
+      $dark,
+      $dark-invert
+    ),
+    "primary": (
+      $primary,
+      $primary-invert,
+      $primary-light,
+      $primary-dark
+    ),
+    "link": (
+      $link,
+      $link-invert,
+      $link-light,
+      $link-dark
+    ),
+    "info": (
+      $info,
+      $info-invert,
+      $info-light,
+      $info-dark
+    ),
+    "success": (
+      $success,
+      $success-invert,
+      $success-light,
+      $success-dark
+    ),
+    "warning": (
+      $warning,
+      $warning-invert,
+      $warning-light,
+      $warning-dark
+    ),
+    "danger": (
+      $danger,
+      $danger-invert,
+      $danger-light,
+      $danger-dark
+    ),
+    "facebook": (
+      $facebook,
+      $white
+    ),
+    "instagram": (
+      $instagram,
+      $white
+    )
+  ),
+  $custom-colors
+);
+
 $body-family: "Montserrat", "sans-serif";
 
 //MODALS

@@ -1,25 +1,24 @@
 <template>
   <div
-    class="tabs is-fullwidth has-text-info is-large is-marginless is-paddingless has-text-weight-bold is-toggle"
+    class="tabs is-fullwidth has-text-primary is-medium is-marginless is-paddingless has-text-weight-bold is-toggle has-background-black-ter"
   >
     <ul>
-      <li>
+      <li id="coname">
         <span class="is-hidden-touch has-text-white-ter"
           >Empirical Merchandising</span
         >
         <span class="is-hidden-desktop has-text-white-ter">EM</span>
       </li>
-      <li class="is-hidden-touch"></li>
       <li
         v-for="(l, k) in navlinks"
         :key="k"
-        class="pointer"
+        class="pointer menuitem"
         @click="navLink(l.link, l.type)"
       >
-        <span class="icon is-large"
-          ><fas class="is-hidden-desktop" :icon="l.icon"></fas
+        <span class="icon is-large is-hidden-desktop"
+          ><fas :icon="l.icon"></fas
         ></span>
-        <span class="is-hidden-touch">{{ l.name }}</span>
+        <span class="menutext is-hidden-touch">{{ l.name }}</span>
       </li>
     </ul>
   </div>
@@ -77,5 +76,15 @@ export default {
 <style>
 .tabs {
   padding-bottom: 10px;
+}
+#coname {
+  text-align: left;
+  padding: 0.3em 1.5em;
+}
+.menuitem {
+  flex-grow: 0 !important;
+}
+.menuitem .menutext {
+  padding: 0 1.5em;
 }
 </style>

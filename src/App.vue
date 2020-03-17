@@ -2,13 +2,14 @@
   <div id="app">
     <NavigationBar id="nav" @toggle-contact="toggleContact" />
     <NotificationBar v-if="alert.active" :alert="alert" @alert="toggleAlert" />
-    <router-view />
+    <router-view id="bodycontent" />
     <ContactModal
       v-if="contact"
       :class="{ 'is-active': contact }"
       @toggle-contact="toggleContact"
       @alert="toggleAlert($event)"
     />
+    <FooterBar id="footercontent" />
   </div>
 </template>
 
@@ -16,11 +17,13 @@
 import NavigationBar from "./components/NavigationBar";
 import ContactModal from "./components/ContactModal";
 import NotificationBar from "./components/NotificationBar";
+import FooterBar from "./components/FooterBar";
 export default {
   components: {
     NavigationBar,
     ContactModal,
-    NotificationBar
+    NotificationBar,
+    FooterBar
   },
   data() {
     return {
@@ -47,11 +50,21 @@ export default {
 
 <style lang="scss">
 #app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
 .pointer {
   cursor: pointer;
+}
+#footercontent {
+  max-height: fit-content;
+  padding: 0.5em 3em;
+}
+#bodycontent {
+  flex: 1;
 }
 </style>

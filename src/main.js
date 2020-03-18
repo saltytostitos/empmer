@@ -14,6 +14,6 @@ new Vue({
   render: h => h(App)
 }).$mount("#app");
 
-//bulma uses
-//icon
-//tabs
+//TODO: INSTALL VUE-GTAG
+// LAZY LOAD IMAGES?
+// IMG ALT TAGS

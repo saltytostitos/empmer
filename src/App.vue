@@ -25,10 +25,11 @@
 
 <script>
 import NavigationBar from "./components/NavigationBar";
-import ContactModal from "./components/ContactModal";
-import NotificationBar from "./components/NotificationBar";
+const ContactModal = () => import("./components/ContactModal");
+const NotificationBar = () => import("./components/NotificationBar");
 import FooterBar from "./components/FooterBar";
-import LoginModal from "./components/LoginModal";
+const LoginModal = () => import("./components/LoginModal");
+
 export default {
   components: {
     NavigationBar,
@@ -41,6 +42,7 @@ export default {
     return {
       contact: false,
       login: false,
+      pw: "",
       alert: {
         active: false,
         type: "",
@@ -50,6 +52,7 @@ export default {
   },
   methods: {
     toggleLogin() {
+      this.pw = "";
       this.login = !this.login;
     },
     toggleContact() {

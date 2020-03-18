@@ -4,6 +4,10 @@ import Home from "../views/Home.vue";
 
 Vue.use(VueRouter);
 
+const about = () =>
+  import(/* webpackChunkName: "about" */ "../views/About.vue");
+const work = () => import(/* webpackChunkName: "work" */ "../views/Work.vue");
+
 const routes = [
   {
     path: "/",
@@ -13,13 +17,12 @@ const routes = [
   {
     path: "/about",
     name: "about",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    component: about
   },
   {
     path: "/work",
     name: "work",
-    component: () => import(/* webpackChunkName: "work" */ "../views/Work.vue")
+    component: work
   },
   {
     path: "*",

@@ -9,7 +9,7 @@
       <div class="icon level-item has-text-grey-dark is-size-7 is-italic ">
         <span @click="$emit('toggle-login')" class="pointer">admin</span>
       </div>
-      <div class="level-right">
+      <div class="level-right is-hidden-touch">
         <div class="icon level-item has-text-facebook">
           <img src="../assets/fb.png" />
         </div>

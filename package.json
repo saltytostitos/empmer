@@ -14,7 +14,9 @@
     "@fortawesome/vue-fontawesome": "^0.1.9",
     "bulma": "^0.8.0",
     "core-js": "^3.6.4",
+    "v-lazy-image": "^1.4.0",
     "vue": "^2.6.11",
+    "vue-gtag": "^1.6.2",
     "vue-router": "^3.1.5"
   },
   "devDependencies": {
